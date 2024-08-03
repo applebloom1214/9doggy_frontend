@@ -1,5 +1,15 @@
 header{
+    display: grid;
+    overflow: hidden;
     background-color: antiquewhite;
+
+    & .menus{
+        background-color: red;
+
+        & li{
+            background-color: blue;
+        }
+    }
 }
 
 .slide_banner{
