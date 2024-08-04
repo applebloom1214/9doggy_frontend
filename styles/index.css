@@ -1,13 +1,38 @@
+html {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;  /* 1rem = 10px  */
+}
+
+
 header{
-    display: grid;
-    overflow: hidden;
-    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    font-size: 1.6rem;
+    font-weight: bold;
 
-    & .menus{
-        background-color: red;
+    & .header{
+        display: flex;
+        height: 70px;
+        align-items: flex-end;
+        gap: 1.5rem;
+        
 
-        & li{
-            background-color: blue;
+        & .menus{
+            width: 90rem;
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        & a img{
+            width: 200px;
+            height: 50px;
+        }
+
+        & .menu__cart, .menu__account{
+            margin-bottom: 1rem;
         }
     }
 }
