@@ -48,3 +48,21 @@ main{
 footer{
     background-color: blue;
 }
+
+/* Media Query 시작 */
+
+@media screen and (max-width:945px) {
+
+    .header{
+        width: 50%;
+    }
+
+    .menus
+    {
+        background-color: red;
+        
+    }
+
+}
+
+/* Media Query 끝 */
