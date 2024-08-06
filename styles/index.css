@@ -6,7 +6,41 @@ html {
 }
 
 
-header{
+.header{
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 25% 50% 5% 20%;
+
+    & .logo{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        & .logo__img{
+            width: 150px;
+            height: 45px;
+            background-image: url("../img/logo/9doggylogo.png");
+            background-size: 150px 45px;
+            margin-bottom: 10px;
+        }
+    }
+
+    & .menus{
+        background-color: blue;
+    }
+
+    & .cart{
+        background-color: aqua;
+    }
+
+    & .account{
+        background-color: blueviolet;
+    }
+    
+
+}
+
+/* header{
     display: flex;
     justify-content: center;
     height: 80px;
@@ -26,16 +60,13 @@ header{
             gap: 1rem;
             margin-bottom: 1rem;
         }
-        & a img{
-            width: 200px;
-            height: 50px;
-        }
+
 
         & .menu__cart, .menu__account{
             margin-bottom: 1rem;
         }
     }
-}
+} */
 
 .slide_banner{
     background-color:  aqua;
@@ -54,15 +85,8 @@ footer{
 @media screen and (max-width:945px) {
 
     .header{
-        width: 50%;
+        grid-template-columns: 33% 33% 16.5% 16.5%;
     }
-
-    .menus
-    {
-        background-color: red;
-        
-    }
-
 }
 
 /* Media Query 끝 */
