@@ -1,3 +1,7 @@
+:root{
+    --hover : #8e755e;
+}
+
 html {
     font-family: "Nanum Pen Script", cursive;
     font-weight: 400;
@@ -11,6 +15,8 @@ html {
     height: 80px;
     display: grid;
     grid-template-columns: 25% 50% 5% 20%;
+    font-size: 1.5rem;
+    font-weight: bold;
 
     & .logo{
         display: flex;
@@ -21,20 +27,51 @@ html {
             height: 45px;
             background-image: url("../img/logo/9doggylogo.png");
             background-size: 150px 45px;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
     }
 
     & .menus{
-        background-color: blue;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+        margin-left: 3rem;
+        margin-bottom: 1.7rem;
+        gap: 3rem;
+        /* background-color: blue; */
+
+        & .menu__shop:hover{
+            color: var(--hover);
+        }
+
+        & .menu__community:hover{
+            color: var(--hover);
+        }
     }
 
+
     & .cart{
-        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 2.5rem;
+        /* background-color: aqua; */
+    }
+
+    & .cart:hover{
+        color: var(--hover);
     }
 
     & .account{
-        background-color: blueviolet;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+        margin-bottom: 2.5rem;
+        /* background-color: blueviolet; */
+    }
+
+    & .account:hover{
+        color: var(--hover);
     }
     
 
@@ -69,7 +106,11 @@ html {
 } */
 
 .slide_banner{
-    background-color:  aqua;
+    width: 100%;
+    height: 60rem;
+    background-image: url("../img/banner/1920.jpg");
+    background-size: 100% 60rem;
+    /* background-color:  aqua; */
 }
 
 main{
@@ -85,7 +126,16 @@ footer{
 @media screen and (max-width:945px) {
 
     .header{
-        grid-template-columns: 33% 33% 16.5% 16.5%;
+        grid-template-columns: 33% 35% 16% 16%;
+
+        & .cart{
+            justify-content: right;
+        }
+    
+        & .account{
+            justify-content: center;
+
+        }
     }
 }
 
