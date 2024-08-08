@@ -40,13 +40,6 @@ html {
         gap: 3rem;
         /* background-color: blue; */
 
-        & .menu__shop:hover{
-            color: var(--hover);
-        }
-
-        & .menu__community:hover{
-            color: var(--hover);
-        }
     }
 
 
@@ -58,9 +51,6 @@ html {
         /* background-color: aqua; */
     }
 
-    & .cart:hover{
-        color: var(--hover);
-    }
 
     & .account{
         display: flex;
@@ -70,47 +60,25 @@ html {
         /* background-color: blueviolet; */
     }
 
-    & .account:hover{
+    & .hover:hover{
         color: var(--hover);
     }
-    
 
 }
 
-/* header{
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    font-size: 1.6rem;
-    font-weight: bold;
-
-    & .header{
-        display: flex;
-        height: 70px;
-        align-items: flex-end;
-        gap: 1.5rem;
-        
-
-        & .menus{
-            width: 90rem;
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-
-        & .menu__cart, .menu__account{
-            margin-bottom: 1rem;
-        }
-    }
-} */
 
 .slide_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
     width: 100%;
     height: 60rem;
     background-image: url("../img/banner/1920.jpg");
     background-size: 100% 60rem;
-    /* background-color:  aqua; */
+    & h1{
+        font-size: 5rem;
+    }
 }
 
 main{
