@@ -97,6 +97,8 @@ html {
     }
 
     & .sub__btn{
+        font-size: 1.5rem;
+        font-weight: bold;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -108,7 +110,16 @@ html {
 }
 
 main{
-    background-color: black;
+    width: 100%;
+    display: flex;
+    background-color: rebeccapurple;
+
+    & .features{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 126rem;
+    }
 }
 
 footer{
