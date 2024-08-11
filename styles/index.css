@@ -112,13 +112,31 @@ html {
 main{
     width: 100%;
     display: flex;
-    background-color: rebeccapurple;
+    justify-content: center;
+    background-color: #f4f5f0;
+
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
 
     & .features{
+        margin-top: 16.5rem;
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         width: 126rem;
+        row-gap: 10rem;
+
+        .feature{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 }
 
@@ -142,6 +160,22 @@ footer{
 
         }
     }
+
+    main{
+        h1, h2, img{
+            max-width: 44.5rem;
+        }
+
+
+
+        & .features{
+            width: 44.5rem;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr;
+        }
+
+    }
+    
 }
 
 /* Media Query 끝 */
