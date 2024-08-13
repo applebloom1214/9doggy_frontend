@@ -32,6 +32,7 @@ html {
     }
 
     & .menus{
+        position: relative;
         display: flex;
         justify-content: left;
         align-items: flex-end;
@@ -40,6 +41,17 @@ html {
         gap: 3rem;
         /* background-color: blue; */
 
+        & .menu__community:hover{
+
+            .community__selector{
+                display: block;
+            }
+        }
+        
+            & .community__selector{
+                position: absolute;
+                display: none;
+            }
     }
 
 
@@ -138,9 +150,7 @@ main{
             flex-direction: column;
             gap: 2rem;
 
-            & .feature__img{
-
-             
+            & .feature__img{ 
 
                 & .feature__img__sub{
                     left: 5rem;
@@ -198,7 +208,18 @@ main{
 }
 
 footer{
-    background-color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f4f5f0;
+
+    & .footer__text{
+        width: 126rem;
+    }
 }
 
 /* Media Query 시작 */
@@ -231,6 +252,12 @@ footer{
             grid-template-columns: 1fr;
         }
 
+    }
+
+    footer{
+        & .footer__text{
+            width: 44.5rem;
+        }
     }
     
 }
