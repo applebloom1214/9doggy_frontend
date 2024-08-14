@@ -1,0 +1,33 @@
+:root{
+    --hover : #8e755e;
+}
+
+html {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;  /* 1rem = 10px  */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5rem;
+
+    h1{
+        margin-top: 10rem;
+    }
+
+    & .board{
+        width: 126rem;
+        display: grid;
+        grid-template-rows: repeat(11, 1fr);
+
+        & .board__row{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+    }
+}

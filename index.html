@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="icon" href="img/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" href="img/favicon/favicon-32x32.png" sizes="32x32" />
@@ -13,11 +14,12 @@
   <body>
     <div class="wrapper">
       <div class="header">
-        <a class="logo"><div class="logo__img"></div></a>
+        <a class="logo" href="index.html"><div class="logo__img"></div></a>
         <ul class="menus">
           <li class="menu__shop hover">SHOP</li>
-          <li class="menu__community hover">COMMUNITY</li>
-          <div class="community__selector">메뉴 선택</div>
+          <li class="menu__community hover">
+            <a href="board.html">COMMUNITY</a>
+          </li>
         </ul>
         <div class="cart hover">
           <i class="fa-solid fa-cart-shopping fa-lg"></i>
