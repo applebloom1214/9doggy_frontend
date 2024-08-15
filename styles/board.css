@@ -3,7 +3,7 @@
 }
 
 html {
-    font-family: "Nanum Pen Script", cursive;
+    font-family: 'Noto Sans KR', AppleSDGothic, 'apple sd gothic neo', MalgunGothic, 'HY Dotum', 'Lexi Gulim', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 10px;  /* 1rem = 10px  */
@@ -16,17 +16,43 @@ main{
     gap:5rem;
 
     h1{
-        margin-top: 10rem;
+        font-size: 3rem;
+        margin-top: 5rem;
     }
 
     & .board{
+        font-size: 1.5rem;
         width: 126rem;
         display: grid;
         grid-template-rows: repeat(11, 1fr);
 
         & .board__row{
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            justify-content: center;
+            align-items: center;
+            border-bottom: solid 0.2rem rgba(198, 191, 185, 0.2);
+            height: 4rem;
+            grid-template-columns: 5% 55% 10% 10% 10% 10%;
+
+            & .boardcell__no, .boardcell__title, .boardcell__writer,
+            .boardcell__hit, .boardcell__like{
+                display: flex;
+                justify-content: center;
+            }
+
+            & .boardcell__date{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            
+            }
+        }
+
+        & .bheader{
+            font-weight: bold;
+            background-color: #fafaf8;
+            border-top: solid 0.2rem #c6bfb9;
         }
 
     }
