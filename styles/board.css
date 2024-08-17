@@ -90,6 +90,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2rem;
 
         & .active{
             color:#be8964 ;            
@@ -112,4 +113,94 @@ main{
             border-radius: 3rem;
         }
     }
+
+    & .board__searchbar{
+        display: flex;
+        justify-content: center;
+        width: 126rem;
+        height: 3.5rem;
+        
+
+        & .board__text, .board__select{
+            background-color: #f4f1ec;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 0.3rem;
+        }
+
+        & .board__select{
+            width: 10rem;
+            background-color: #c5875e;
+        }
+
+        & .board__text{
+            width: 25%;
+        }
+
+        & .board__search{
+            width: 5.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.3rem;
+            background-color: #c5875e;
+        }
+    }
 }
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    & .footer__text{
+        width: 126rem;
+    }
+}
+
+/* Media Query 시작 */
+
+@media screen and (max-width:945px) {
+
+    main{
+
+        & .board{
+            font-size: 1rem;
+            width: 44.5rem;
+
+            & .bheader{
+                display: none;
+            }
+
+            & .board__row{
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: 10% 80% 10%;
+            }
+    
+        }
+
+        .board:nth-child(2){
+            border-top: solid 0.2rem rgba(198, 191, 185, 0.2);
+        }
+        
+
+
+
+
+
+    }
+
+    footer{
+        & .footer__text{
+            width: 44.5rem;
+        }
+    }
+    
+}
+
+/* Media Query 끝 */
