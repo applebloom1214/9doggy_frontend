@@ -3,6 +3,15 @@
    License: none (public domain)
 */
 
+:root{
+    --hover : #8e755e;
+		font-family: 'Noto Sans KR', AppleSDGothic, 'apple sd gothic neo', MalgunGothic, 'HY Dotum', 'Lexi Gulim', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 10px;  /* 1rem = 10px  */
+	
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
