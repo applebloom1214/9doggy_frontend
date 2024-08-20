@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/write.css" />
+    <link rel="stylesheet" href="./styles/read.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="icon" href="img/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" href="img/favicon/favicon-32x32.png" sizes="32x32" />
@@ -27,9 +27,9 @@
         <div class="account hover"><i class="fa-solid fa-user fa-lg"></i></div>
       </div>
       <main>
-        <h1>글쓰기</h1>
-        <div class="board__write">
-          <div class="write__desc">
+        <div class="board__read">
+          <h1>안녕하세요 ? 반갑습니다.</h1>
+          <div class="read__desc">
             <span class="desc__writer"
               ><span style="color: #c6bfb9">by. </span>글쓴이</span
             >
@@ -39,6 +39,8 @@
             type="text"
             class="write__title"
             placeholder="제목을 입력해주세요."
+            value="테스트"
+            readonly
           />
           <div class="write__upload">
             <label for="upload__file" class="upload__label"

@@ -3,20 +3,21 @@ main{
     flex-direction: column;
     align-items: center;
 
-    h1{
-        font-size: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-    }
 
-    & .board__write{
+    & .board__read{
         font-size: 1.5rem;
         display: grid;
         justify-content: center;
         width: 126rem;
         gap: 2rem;
 
-        & .write__title, .write__upload, .write__desc, .write__textarea, .write__btns{
+        h1{
+            font-weight: bold;
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+
+        & .write__title, .write__upload, .read__desc, .write__textarea, .write__btns{
             width: 80rem;
         }
 
@@ -34,7 +35,7 @@ main{
             border: solid 0.2rem #c5875e;
         }
 
-        & .write__desc{
+        & .read__desc{
             display: flex;
             gap: 1.5rem;
 
