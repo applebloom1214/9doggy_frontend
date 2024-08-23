@@ -1,0 +1,130 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    & .board__modify{
+        font-size: 1.5rem;
+        display: grid;
+        justify-content: center;
+        width: 126rem;
+        gap: 2rem;
+
+        & .modify__title, .modify__upload, .modify__desc, .modify__textarea, .modify__btns{
+            width: 80rem;
+        }
+
+        & .modify__title, .modify__textarea{
+            font-size: 2rem;
+            border: solid 0.2rem #c6bfb9;
+            outline: none;
+        }
+
+        & .modify__title:hover{
+            border: solid 0.2rem #c5875e;
+        }
+
+        & .modify__textarea:hover{
+            border: solid 0.2rem #c5875e;
+        }
+
+        & .modify__desc{
+            display: flex;
+            gap: 1.5rem;
+
+            & .desc__writer{
+                font-weight: bold;
+            }
+        }
+
+        & .modify__title{
+            height: 4rem;
+        }
+
+        & .modify__upload{
+
+            & .upload__file{
+                display: none;
+            }
+        }
+
+        & .modify__textarea{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 2rem;
+            font-size: 2rem;
+            height: 50rem;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            & .modify__img{
+                align-self: center;
+            }
+        }
+
+        & .modify__btns{
+            display: flex;
+            gap: 1.5rem;
+    
+            & .modify__btn{
+                font-size: 1.5rem;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #c5875e;
+                width: 7rem;
+                height: 3rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    & .footer__text{
+        width: 126rem;
+    }
+}
+
+/* Media Query 시작 */
+
+@media screen and (max-width:945px) {
+
+    main{
+        & .board__modify{
+            width: 44.5rem;
+
+            & .modify__title, .modify__upload, .modify__desc, .modify__textarea, .modify__btns{
+                width: 44.5rem;
+            }
+        }
+
+
+    }
+
+    footer{
+        & .footer__text{
+            width: 44.5rem;
+        }
+    }
+    
+}
+
+/* Media Query 끝 */
