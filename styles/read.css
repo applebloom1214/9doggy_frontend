@@ -21,6 +21,27 @@ main{
             width: 80rem;
         }
 
+        & .read__likes{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            & .fa-heart{
+                font-size: 2.5rem;
+                border: 0.5rem solid black;
+            }
+
+            & .read__like{
+                font-weight: bold;
+                align-self: center;
+            }
+
+            & .fa-heart:hover{
+                opacity: 0.5;
+            }
+
+        }
+
         & .read__textarea{
             font-size: 2rem;
             border: none;
